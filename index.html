@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProjects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="all">
+        <header>
+            <div class="logo">
+                <h1>MyProjects</h1>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrjmndspfrwNdNHPCCqHLfrlsjxlGPwqxCMMVwVXKCzdRsjpMBjMCrkpNVJpJKgSSvjWqV" target="_blank">E-mail</a></li>
+                    <li><a href="https://github.com/SHIALIK" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/t__abdulaz1z/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.telegram.com/t_abdulaz1z/" target="_blank">Telegram</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>This web-site will give you the link and code of my projects</h1>
+            <a href="https://github.com/SHIALIK" target="_blank">
+                <button class="button">GitHub</button>
+            </a>
+        </main>
+
+        <section>
+            <h1>Here Are My Projects With Their Codes</h1>
+            <div class="project">
+                <h2><a href="https://calc-calculator.vercel.app/" target="_blank">Calculator</a> <button id="button1" onclick="function1()"><i class='bx bx-chevron-down'></i></button></h2>
+
+                <div id="code1" class="codes">
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>html</span>
+                            <button onclick="copyCode()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p1-c1" class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Calculator&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link rel="icon" href="logo.png"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;section class="screen"&gt;0&lt;/section&gt;
+
+        &lt;section class="calc-buttons"&gt;
+            &lt;div class="calc-button-row"&gt;
+                &lt;button class="calc-button double"&gt;C&lt;/button&gt;
+                &lt;button class="calc-button"&gt;←&lt;/button&gt;
+                &lt;button class="calc-button"&gt;÷&lt;/button&gt;
+            &lt;/div&gt; 
+            
+            &lt;div class="calc-button-row"&gt;
+                &lt;button class="calc-button"&gt;7&lt;/button&gt;
+                &lt;button class="calc-button"&gt;8&lt;/button&gt;
+                &lt;button class="calc-button"&gt;9&lt;/button&gt;
+                &lt;button class="calc-button"&gt;×&lt;/button&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="calc-button-row"&gt;
+                &lt;button class="calc-button"&gt;4&lt;/button&gt;
+                &lt;button class="calc-button"&gt;5&lt;/button&gt;
+                &lt;button class="calc-button"&gt;6&lt;/button&gt;
+                &lt;button class="calc-button"&gt;−&lt;/button&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="calc-button-row"&gt;
+                &lt;button class="calc-button"&gt;1&lt;/button&gt;
+                &lt;button class="calc-button"&gt;2&lt;/button&gt;
+                &lt;button class="calc-button"&gt;3&lt;/button&gt;
+                &lt;button class="calc-button"&gt;+&lt;/button&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="calc-button-row"&gt;
+                &lt;button class="calc-button triple"&gt;0&lt;/button&gt;
+                &lt;button class="calc-button"&gt;=&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            
+                        </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>css</span>
+                            <button onclick="copyCode2()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p1-c2" class="language-css">
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s linear;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+}
+
+.wrapper {
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    padding: 20px 35px;
+    width: 350px;
+}
+
+.screen {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #232323;
+    font-size: 35px;
+    padding: 20px;
+    text-align: right;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
+}
+
+.calc-buttons {
+    margin-top: 20px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calc-button {
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #232323;
+    font-size: 24px;
+    width: 23%;
+    height: 65px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calc-button:last-child {
+    background: #d72880;
+    color: white;
+}
+
+.calc-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.calc-button:active {
+    background: #ffef78;
+}
+
+.double {
+    width: 48%;
+}
+
+.triple {
+    width: 73%;
+}
+
+
+                        </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>js</span>
+                            <button onclick="copyCode3()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p1-c3" class="language-js">
+
+let runningTotal = 0;
+let buffer = "0";
+let previousOperator = null;
+
+const screen = document.querySelector('.screen');
+
+function buttonClick(value) {
+    if (isNaN(value)) {
+        handleSymbol(value);
+    } else {
+        handleNumber(value);
+    }
+    screen.innerText = buffer;
+}
+
+function handleSymbol(symbol) {
+    switch (symbol) {
+        case 'C':
+            buffer = '0';
+            runningTotal = 0;
+            previousOperator = null;
+            break;
+        case '=':
+            if (previousOperator === null) {
+                return;
+            }
+            flushOperation(parseInt(buffer));
+            previousOperator = null;
+            buffer = runningTotal.toString();
+            runningTotal = 0;
+            break;
+        case '←':
+            if (buffer.length === 1) {
+                buffer = '0';
+            } else {
+                buffer = buffer.slice(0, -1);
+            }
+            break;
+        case '÷':
+        case '/':
+            handleMath('/');
+            break;
+        case '×':
+        case '*':
+            handleMath('*');
+            break;
+        case '−':
+        case '-':
+            handleMath('-');
+            break;
+        case '+':
+            handleMath('+');
+            break;
+    }
+}
+
+function handleMath(symbol) {
+    if (buffer === '0') {
+        return;
+    }
+
+    const intBuffer = parseInt(buffer);
+    if (runningTotal === 0) {
+        runningTotal = intBuffer;
+    } else {
+        flushOperation(intBuffer);
+    }
+    previousOperator = symbol;
+    buffer = "0";
+}
+
+function flushOperation(intBuffer) {
+    if (previousOperator === '+') {
+        runningTotal += intBuffer;
+    } else if (previousOperator === '-') {
+        runningTotal -= intBuffer;
+    } else if (previousOperator === '*') {
+        runningTotal *= intBuffer;
+    } else if (previousOperator === '/') {
+        if (intBuffer === 0) {
+            buffer = 'Error';
+            runningTotal = 0;
+            previousOperator = null;
+            return;
+        }
+        runningTotal = runningTotal / intBuffer;
+    }
+    buffer = runningTotal.toString();
+}
+
+function handleNumber(numberString) {
+    if (buffer === "0" || buffer === "Error") {
+        buffer = numberString;
+    } else {
+        buffer += numberString;
+    }
+}
+
+function init() {
+    document.querySelector('.calc-buttons').addEventListener('click', function (event) {
+        if (event.target.tagName === 'BUTTON') {
+            buttonClick(event.target.innerText.trim());
+        }
+    });
+}
+
+init();
+
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+            <div class="project">
+                <h2><a href="https://mini-game-penalty.vercel.app/" target="_blank">Mini-game</a> <button id="button2" onclick="function2()"><i class='bx bx-chevron-down'></i></button></h2>
+
+                <div id="code2" class="codes">
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>html</span>
+                            <button onclick="copyCode4()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p2-c1" class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Penalty Shootout&lt;/title&gt;
+    &lt;link rel="icon" href="logo.webp"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1 class="message" id="result"&gt;&lt;/h1&gt;
+
+    &lt;div class="goal"&gt;
+        &lt;div class="goalkeeper"&gt;
+            &lt;img src="gk.png" alt="gk"&gt;
+        &lt;/div&gt;
+        &lt;div class="ball"&gt;
+            &lt;img src="ball.png" alt="ball"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="button" onclick="shoot()"&gt;Shoot&lt;/button&gt;
+    &lt;a href="" class="restart"&gt;&lt;button class="restart2"&gt;RESTART&lt;/button&gt;&lt;/a&gt;
+
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;                         
+                        </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>css</span>
+                            <button onclick="copyCode5()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p2-c2" class="language-css">
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: green;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.goal {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: transparent;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+.goalkeeper {
+    position: absolute;
+    bottom: 100px;
+    left: 35%;
+    width: 60px;
+    height: 80px;
+    background: url('https://i.imgur.com/7DDrksH.png') no-repeat center/cover; /* GK image */
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-out;
+}
+
+.goalkeeper img{
+    width: 200px;
+}
+
+.ball {
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    width: 30px;
+    height: 30px;
+    background: url('https://i.imgur.com/zWFUyLn.png') no-repeat center/cover; /* Ball image */
+    transform: translateX(-50%);
+    transition: transform 0.7s ease-out;
+}
+
+.ball img{
+    width: 75px;
+    height: 75px;
+}
+
+/* Diving Animations */
+.gk-left { transform: translateX(-140px) translateY(10px) rotate(-30deg); }
+.gk-right { transform: translateX(80px) translateY(-30px) rotate(30deg); }
+.gk-center { transform: translateX(-50%) translateY(-30px); }
+
+/* Ball Movement */
+.ball-left { transform: translateX(-100px) translateY(-180px); }
+.ball-right { transform: translateX(80px) translateY(-180px); }
+.ball-center { transform: translateX(-50%) translateY(-180px); }
+
+.message {
+    font-size: 200px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.restart{
+    width: 350px;
+    height: 110px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restart2{
+    width: 80%;
+    height: 80%;
+    border: none;
+    background: #000;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.restart button{
+    width: 300px;
+    height: 50px;
+}
+
+.button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:750px) {
+    .message{
+        font-size: 170px;
+    }
+}
+
+@media (max-width:600px) {
+    .message{
+        font-size: 140px;
+    }
+}
+
+@media (max-width:500px) {
+    .message{
+        font-size: 120px;
+    }
+}
+                            </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>js</span>
+                            <button onclick="copyCode6()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p2-c3" class="language-js">
+
+function shoot() {
+    const goalkeeper = document.querySelector('.goalkeeper');
+    const ball = document.querySelector('.ball');
+    const message = document.getElementById('result');
+
+    const directions = ["left", "center", "right"];
+    const randomGK = directions[Math.floor(Math.random() * directions.length)];
+    const randomBall = directions[Math.floor(Math.random() * directions.length)];
+
+    // Reset classes
+    goalkeeper.className = "goalkeeper";
+    ball.className = "ball";
+    message.style.display = "none";
+
+    // Add movement classes
+    goalkeeper.classList.add(`gk-${randomGK}`);
+    ball.classList.add(`ball-${randomBall}`);
+
+    // Determine if it's a goal or miss
+    setTimeout(() => {
+        if (randomGK === randomBall) {
+            message.textContent = "MISS!!!";
+            message.style.color = "red";
+        } else {
+            message.textContent = "GOAL!!!";
+            message.style.color = "yellow";
+        }
+        message.style.display = "block";
+    }, 700); // Wait for animation
+}
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+            <div class="project">
+                <h2><a href="https://uzum-market-online-shop.vercel.app/" target="_blank">Uzum-market</a> <button id="button3" onclick="function3()"><i class='bx bx-chevron-down'></i></button></h2>
+
+                <div id="code3" class="codes">
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>html</span>
+                            <button onclick="copyCode()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p3-c1" class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Uzum market&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link rel="icon" href="assets/main_logo.png"&gt;
+    &lt;link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;section class="navbar"&gt;
+        &lt;nav class="section_1"&gt;
+            &lt;div class="local_area"&gt;
+                &lt;div class="area"&gt;
+                    &lt;i class="fa-solid fa-location-dot"&gt;&lt;/i&gt;
+                    &lt;p&gt;Shahar:&lt;b&gt;Namangan&lt;/b&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p&gt;Topshirish punktlari&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="shipping"&gt;
+                &lt;p&gt;Buyurtmangizni 1 kunda bepul yetkazib beramiz!&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="others"&gt;
+                &lt;p&gt;Savol-javoblar&lt;/p&gt;
+                &lt;p&gt;Buyurtmalarim&lt;/p&gt;
+                &lt;div class="lang"&gt;
+                    &lt;div class="lan"&gt;
+                        &lt;img src="assets/uzb.png" alt="uzb"&gt;
+                        &lt;p&gt;Оʻzbekcha&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="lan language"&gt;
+                        &lt;img src="assets/rus.png" alt="rus"&gt;
+                        &lt;p&gt;Русский&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="lan language"&gt;
+                        &lt;img src="assets/eng.png" alt="eng"&gt;
+                        &lt;p&gt;English&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;                            
+                        </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>css</span>
+                            <button onclick="copyCode2()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p3-c2" class="language-css">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+main{
+    padding: 15px 100px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 5px 100px;
+    justify-content: space-between;
+    animation: slideright 2s ease-in;
+    animation-delay: 0s;
+}
+
+img{
+    cursor: pointer;
+}
+
+nav p{
+    cursor: pointer;
+}
+
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div id="show3" class="report">
+                    <b>THE CODE OF UZUM-MARKET DIDN'T FIT IN HERE SO YOU CAN GET THE CODE IN MY GITHUB*</b>
+                    <a href="https://github.com/SHIALIK/uzum-market" target="_blank"><button class="button">GITHUB</button></a>
+                </div>
+
+            </div>
+            <div class="project">
+                <h2><a href="https://pixelcraft-portfolio.vercel.app/" target="_blank">Portfolio</a> <button id="button4" onclick="function4()"><i class='bx bx-chevron-down'></i></button></h2>
+
+                <div id="code4" class="codes">
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>html</span>
+                            <button onclick="copyCode4()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p4-c1" class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link rel="icon" href="assets/logo.png"&gt;
+    &lt;link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome&lt;/h1&gt;
+        &lt;button class="menu-button" onclick="toggleMenu()"&gt;☰&lt;/button&gt;
+        &lt;nav&gt;
+            &lt;ul id="nav-list"&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;section id="home"&gt;
+        &lt;h2&gt;Welcome to My Digital Space&lt;/h2&gt;
+        &lt;p&gt;I craft innovative web experiences with clean design and solid code.&lt;/p&gt;
+        &lt;button&gt;Explore My Work&lt;/button&gt;
+    &lt;/section&gt;
+
+    &lt;section id="about"&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p class="p"&gt;I'm a full-stack developer passionate about creating dynamic, user-friendly websites.&lt;/p&gt;
+    &lt;/section&gt;
+    
+    &lt;section id="skills"&gt;
+        &lt;h2&gt;Technical Skills&lt;/h2&gt;
+        &lt;p&gt;HTML, CSS, JavaScript, React, Node.js, Python, UI/UX Design&lt;/p&gt;
+    &lt;/section&gt;
+    
+    &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;form action="https://formspree.io/f/xanqprwj" method="POST"&gt;
+            &lt;input type="text" name="name" placeholder="Your Name" required&gt;
+            &lt;input type="email" name="email" placeholder="Your Email" required&gt;
+            &lt;textarea name="message" placeholder="Your Message" required&gt;&lt;/textarea&gt;
+            &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+    
+    &lt;footer&gt;
+        &lt;div class="flexbox"&gt;
+            &lt;ul&gt;
+                &lt;h2&gt;Home&lt;/h2&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul&gt;
+                &lt;h2&gt;About me&lt;/h2&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul&gt;
+                &lt;h2&gt;Contact&lt;/h2&gt;
+                &lt;li&gt;&lt;a href="#blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div id="blog"&gt;
+                &lt;h2&gt;Blog&lt;/h2&gt;
+                &lt;a href="https://t.me/tabdulazizt"&gt;
+                    &lt;i class='bx bxl-telegram'&gt;&lt;/i&gt;
+                    &lt;p&gt;Telegram&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;a href="https://www.instagram.com/t__abdulaz1z/"&gt;
+                    &lt;i class='bx bxl-instagram'&gt;&lt;/i&gt;
+                    &lt;p&gt;Instagram&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;a href="https://github.com/SHIALIK"&gt;
+                    &lt;i class='bx bxl-github'&gt;&lt;/i&gt;
+                    &lt;p&gt;GitHub&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;p class="footer_p"&gt;&copy; 2025 My Portfolio | Designed with passion&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+        // menu btn
+        function toggleMenu() {
+            document.getElementById("nav-list").classList.toggle("show");
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            
+                            
+                        </code></pre>
+                    </div>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>css</span>
+                            <button onclick="copyCode5()">📋 Copy</button>
+                        </div>
+                        <pre><code id="p4-c2" class="language-css">
+
+/* General Styles */
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    color: #fff;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #182848, #182848);
+    color: white;
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+@media (max-width: 700px) {
+    .menu-button {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #182848;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        gap: 15px;
+    }
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Sections */
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    width: 85%;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: white;
+    background: #4b6cb7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #182848;
+}
+
+/* Footer */
+footer{
+    background: #182848;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.flexbox{
+    display: flex;
+    width: 95%;
+    padding: 10px 0 30px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexbox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* margin-left: 45px; */
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.flexbox ul li:nth-child(1){
+    margin-top: 0px;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+
+#blog h2{
+    margin-top: 40px;
+}
+
+#blog a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+}
+
+#blog a i{
+    font-size: 2em;
+}
+
+hr{
+    width: 90%;
+}
+
+.footer_p {
+    text-align: center;
+    width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width:1000px) {
+    .flexbox{
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    form {
+        width: 70%;
+    }
+    form input, form textarea {
+        font-size: 1.2rem;
+        padding: 15px 10px;
+    }
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:550px) {
+    footer{
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
+        padding: 5%;
+    }
+}
+                        </code></pre>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xbldnowd" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button class="button" type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="flexbox">
+                <ul>
+                    <h2>Contact</h2>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="blog">
+                    <h2>Blog</h2>
+                    <a href="https://t.me/t_abdulaz1z" target="_blank">
+                        <i class='bx bxl-telegram'></i>
+                        <p>Telegram</p>
+                    </a>
+                    <a href="https://www.instagram.com/t__abdulaz1z/" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                        <p>Instagram</p>
+                    </a>
+                    <a href="https://github.com/SHIALIK" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <p class="footer_p">&copy; 2025 My Projects | Designed with passion</p>
+        </footer>    
+    </div>
+
+
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>

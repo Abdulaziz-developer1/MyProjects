@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.all{
+    width: 100vw;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
+}
+
+.code-container {
+    background: #2d2d2d;
+    border-radius: 8px;
+    overflow: auto;
+    width: 30%;
+    max-width: 90%;
+    transform: scale(0.8);
+    height: 550px;
+}
+
+.code-header {
+    background: #191919;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.code-header span {
+    color: #d8d8d8;
+    font-weight: bold;
+}
+
+.code-header button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.code-header button:hover {
+    background: #666;
+}
+
+pre {
+    margin: 0;
+    padding: 10px;
+    background: #2d2d2d;
+    overflow-x: auto;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    justify-content: space-around;
+    height: auto;
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    cursor: default;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 100vh;
+        background: #1e1e1e;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px 0 50px 0;
+        gap: 25px;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+    text-align: center;
+    height: 80vh;
+    font-size: 30px;
+}
+
+.button{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: forestgreen;
+    font-size: 17px;
+    outline: none;
+    transition: all 0.5s;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background: #1d781d;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+section h1, h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.project{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codes{
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    justify-content: space-evenly;
+    /* gap: 60px; */
+    display: none;
+}
+
+#code3 .code-container{
+    width: 650px;
+}
+
+#code4 .code-container{
+    width: 650px;
+}
+
+.report{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.show2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    margin-top: -5px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    width: 85%;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    background: #1e1e1e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+}
+
+.flexbox{
+    display: flex;
+    width: 95%;
+    padding: 10px 0 30px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexbox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* margin-left: 45px; */
+    font-size: 20px;
+    max-width: 200px;
+    list-style: none;
+}
+
+.flexbox ul li:nth-child(1){
+    margin-top: 0px;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+
+#blog a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+}
+
+#blog a i{
+    font-size: 2em;
+}
+
+hr{
+    width: 90%;
+}
+
+.footer_p {
+    text-align: center;
+    width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width:1000px) {
+    .flexbox{
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    form {
+        width: 70%;
+    }
+    form input, form textarea {
+        font-size: 1.2rem;
+        padding: 15px 10px;
+    }
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:550px) {
+    footer{
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
+        padding: 5%;
+    }
+}
